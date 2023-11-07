@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"; // >17.2
+import FruitButton from "./Components/FruitButton";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+const App = ()=>{
+
+    let a = 100
+
+    let h1Style = {textAlign:"center"}
+
+    return (
+        <div className="hello">
+            <h1 style={h1Style}>Hello World</h1>
+            <p>Hey my first React App</p>
+            <p> Value is {2+3}</p>
+
+
+
+
+
+           <FruitButton 
+              fruit = "Apple"
+              color = "red"
+           />
+          
+
+           
+        </div>
+    )
 }
 
-export default App;
+
+export default App
+
+
+
+
+// modules
+
+
+
+
+
